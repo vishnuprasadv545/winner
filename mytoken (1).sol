@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.18;
+
 /*
        REQUIREMENTS
     1. Your contract will have public variables that store the details about your coin (Token Name, Token Abbrv., Total Supply)
@@ -23,7 +26,6 @@ contract MyToken {
     mapping (address => uint) public balances;
     // mint function
 function mint (address _address, uint _value) public {
-    
    totalSupply += _value;
    balances[_address] += _value;
 }
